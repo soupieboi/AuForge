@@ -1,0 +1,30 @@
+<template>
+  <require from="./my-app.scss"></require>
+  <require from="./components/sussy-button"></require>
+
+  <nav>
+    <a load="/homepage">Home</a>
+    <a load="/page-one">page1</a>
+    <a load="/page-two">page2</a>
+  </nav>
+
+  <div class="message">${message}</div>
+  <div underline>This text is black</div>
+
+  <h2>${pokemonArray.length > 100 ? pokemonArray.pokemons : ''}</h2>
+  <div class="pokemon-list">
+    <span
+      repeat.for="pokemon of pokemonArray.pokemons"
+      click.trigger="pokemonArray.filterByType(pokemon.type)"
+      >${pokemon.name}</span
+    >
+  </div>
+
+  <sussy-button
+    button-text.bind="buttonText"
+    second-text.bind="secondText"
+    on-click.bind="onButtonClick"
+  ></sussy-button>
+
+  <au-viewport></au-viewport>
+</template>

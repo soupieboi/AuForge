@@ -1,0 +1,61 @@
+// Base styles
+* {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+nav {
+  background-color: #333;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  margin-right: 10px;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: #555;
+  }
+}
+
+.message {
+  background-color: lightblue;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+[underline] {
+  color: black;
+  text-decoration: underline;
+}
+
+.pokemon-list {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+span {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  transition: transform 0.2s ease;
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  }
+}
+
